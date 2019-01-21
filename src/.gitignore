@@ -1,0 +1,17 @@
+*.log
+#/data
+!/data/logs/nginx/.gitkeep
+pids/*
+
+# Mac system file
+.DS_Store
+node_modules
+
+# cloud9ide files
+.c9
+
+.idea
+*.lock
+*-lock.json
+dist
+

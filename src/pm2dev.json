@@ -1,0 +1,13 @@
+{
+  "apps" : [{
+    "name"   : "front",
+    "script": "npm",
+    "args": "run dev:server",
+    "env": {
+      "NODE_ENV": "development",
+      "PROD": 0,
+      "API_DOMAIN": "localhost:3000",
+      "PROTOCOL": "http://"
+    }
+  }]
+}

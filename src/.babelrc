@@ -1,0 +1,26 @@
+{
+  "presets": [
+    ["@babel/preset-env", {"useBuiltIns": "entry"}],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-class-properties",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["module-resolver", {
+      "alias": {
+        "app": "./app",
+        "components": "./app/client/components",
+        "constants": "./app/client/constants",
+        "helpers": "./app/client/helpers",
+        "containers": "./app/client/containers",
+        "utils": "./app/client/utils",
+        "store": "./app/client/store",
+        "styles": "./app/client/stylus",
+        "intl": "./app/intl",
+        "dist": "./dist"
+      }
+    }]
+  ]
+}
